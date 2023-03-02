@@ -157,7 +157,6 @@ a:active {
 }
 
 .section-column-3 li {
-  /* font-family: "Inconsolata", monospace; */
   font-size: 1.4vw;
   margin: 0.5vw 0 0.5vw 0;
 }
@@ -180,7 +179,6 @@ a:active {
 }
 
 .section-column-4 li {
-  /* font-family: "Inconsolata", monospace; */
   font-size: 1.4vw;
   font-weight: 200;
   margin: 0.5vw 0 0.5vw 0;
@@ -289,15 +287,37 @@ footer li {
 /* Mobile */
 
 @media only screen and (max-width: 850px) {
-  span.mbr {
-    display: table;
+  /* General */
+
+  /* Headers & Links */
+
+  h1 {
+    font-size: 15vw;
   }
 
+  h2 {
+    font-size: 10vw;
+  }
+
+  h3 {
+    font-size: 6.5vw;
+    margin: 4vw 0 4vw 0;
+  }
+
+  h4 {
+    font-size: 5vw;
+    margin: 3vw 0 3vw 0;
+  }
+
+  p {
+    font-size: 4.5vw;
+    margin: 2vw 0 2vw 0;
+  }
+
+  /* Navigation Bar */
+
   .navbar {
-    position: fixed;
     padding: 3vw 3vw 3vw 3vw;
-    background-color: white;
-    z-index: 1;
     font-size: 9vw;
   }
 
@@ -310,109 +330,57 @@ footer li {
   }
 
   .navbar-container-2 {
-    display: flex;
     justify-content: space-between;
     width: 94vw;
-  }
-
-  h1 {
-    font-size: 15vw;
-    font-weight: 200;
-    margin: 0;
-  }
-
-  h2 {
-    font-size: 10vw;
-    font-weight: 200;
-    margin: 0;
-  }
-
-  h3 {
-    font-size: 6.5vw;
-    font-weight: 200;
-    margin: 4vw 0 4vw 0;
-  }
-
-  h4 {
-    font-size: 5vw;
-    font-weight: 200;
-    margin: 3vw 0 3vw 0;
-  }
-
-  p {
-    font-size: 4.5vw;
-    font-weight: 200;
-    margin: 2vw 0 2vw 0;
   }
 
   /* Wrapper */
 
   .wrapper {
     margin: 0 3vw 3vw 3vw;
-    display: flex;
-    flex-direction: column;
-    gap: 1vmin;
+    gap: 3vw;
   }
 
   .section {
-    display: flex;
-    flex-direction: column;
     gap: 3vw;
   }
 
   .header {
-    display: flex;
-    justify-content: center;
-    text-align: center;
     padding: 14vw;
   }
 
   .section-row {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 3vw 3vw;
   }
 
   .section-column-3-100 {
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
     text-align: left;
-    padding: 3vw;
-    width: 100%;
   }
 
   .section-column-3 {
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
     text-align: left;
-    padding: 3vw;
     width: 45.5vw;
     overflow-wrap: break-word;
     hyphens: manual;
   }
 
   .section-column-3 li {
-    /* font-family: "Inconsolata", monospace; */
     font-size: 4.5vw;
     margin: 2vw 0 2vw 0;
   }
 
+  span.mbr {
+    display: table;
+  }
+
   .section-column-4 {
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     padding: 7vw;
     width: 45.5vw;
   }
 
   .section-column-4 li {
     font-size: 4.5vw;
-    font-weight: 200;
     margin: 2vw 0 2vw 0;
   }
 
@@ -421,21 +389,16 @@ footer li {
   /* Pictures */
 
   .img-container {
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 3vw;
-    margin-top: 120vh;
   }
 
   .img {
     width: 100%;
   }
 
-  #view-two {
-    display: none;
-  }
-
+  #view-two,
   #view-three {
     display: none;
   }
@@ -451,36 +414,22 @@ footer li {
   }
 
   .button-container {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 3vw;
     width: 100%;
   }
 
-  .button-item-1 {
-    flex: 94vw;
-  }
-
+  .button-item-1,
   .button-item-2 {
     width: 94vw;
   }
 
   button {
     padding: 3vw;
-    background-color: #f2f2f2;
-    color: black;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
     font-size: 5vw;
   }
 
-  #jeugd {
-    display: none;
-  }
-
+  #jeugd,
   #subscription {
     display: none;
   }
@@ -488,31 +437,23 @@ footer li {
   /* Contact */
 
   footer {
-    background-color: black;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    color: white;
     padding: 9vw;
     gap: 9vw;
   }
 
   .footer-container {
-    display: flex;
     flex-wrap: wrap;
     gap: 9vw;
     width: 100%;
   }
 
   .footer-column {
-    display: flex;
-    flex-direction: column;
     width: 100%;
   }
 
   footer li {
     font-size: 4vw;
-    font-weight: 200;
     margin: 2vw 0 2vw 0;
   }
 
