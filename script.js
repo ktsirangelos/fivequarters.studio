@@ -64,25 +64,25 @@ const getPrice = function (set, quarters) {
 const loadPrices = function () {
   prices.innerHTML = `
     <ul class="section-column-4">
-    <h3>${single}<br>${classes}</h3>
+    <li><h3>${single}<br>${classes}</h3></li>
     <li>60' – &euro;${getPrice(1, 4)}</li>
     <li>45' – &euro;${getPrice(1, 3)}</li>
     <li>30' – &euro;${getPrice(1, 2)}</li>
     </ul>
     <ul class="section-column-4">
-    <h3>set ${of}<br>4 ${classes}</h3>
+    <li><h3>set ${of}<br>4 ${classes}</h3></li>
     <li>60' – &euro;${getPrice(4, 4)}</li>
     <li>45' – &euro;${getPrice(4, 3)}</li>
     <li>30' – &euro;${getPrice(4, 2)}</li>
     </ul>
     <ul class="section-column-4">
-    <h3>set ${of}<br>8 ${classes}</h3>
+    <li><h3>set ${of}<br>8 ${classes}</h3></li>
     <li>60' – &euro;${getPrice(8, 4)}</li>
     <li>45' – &euro;${getPrice(8, 3)}</li>
     <li>30' – &euro;${getPrice(8, 2)}</li>
     </ul>
     <ul class="section-column-4">
-    <h3>set ${of}<br>16 ${classes}</h3>
+    <li><h3>set ${of}<br>16 ${classes}</h3></li>
     <li>60' – &euro;${getPrice(16, 4)}</li>
     <li>45' – &euro;${getPrice(16, 3)}</li>
     <li>30' – &euro;${getPrice(16, 2)}</li>
