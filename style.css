@@ -1,9 +1,11 @@
 /* General */
 
 * {
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -11,11 +13,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
-
-body {
-  margin: 0;
-  height: 100%;
 }
 
 /* Headers & Links */
