@@ -1,10 +1,10 @@
 // Imports
-
-import { staticPrice, pricePerQuarter, incrementPerSet } from "./config.js";
+import { STATIC_PRICE as staticPrice } from "./config";
+import { PRICE_PER_QUARTER as pricePerQuarter } from "./config";
+import { INCREMENT_PER_SET as incrementPerSet } from "./config";
 
 // Bindings
-
-let btw = 1;
+let btw = 1; //btw 0% = price * 1
 
 const prices = document.getElementById("prices");
 const upTo21 = document.getElementById("up-to-21");
@@ -25,7 +25,6 @@ if (document.documentElement.lang == "nl") {
 }
 
 // Functions
-
 const currentYear = function () {
   document.getElementById("currentYear").textContent = new Date().getFullYear();
 };
@@ -89,7 +88,6 @@ const loadPrices = function () {
 };
 
 // Event Listeners
-
 upTo21.addEventListener("click", function () {
   btw = 1; // btw 0% = price * 1
   loadPrices();
@@ -100,7 +98,6 @@ from21.addEventListener("click", function () {
   loadPrices();
 });
 
-// Call on load
-
+// Init
 loadPrices();
 currentYear();
