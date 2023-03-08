@@ -1,10 +1,8 @@
-"use strict";
+// Imports
 
-// Declarations
+import { staticPrice, pricePerQuarter, incrementPerSet } from "./config.js";
 
-const staticPrice = 6; // fixed lesson cost: euros per lesson
-const pricePerQuarter = 10; // lesson cost: euros per quarter
-const incrementPerSet = 0.5; // added cost: euros per quarter
+// Bindings
 
 let btw = 1;
 
