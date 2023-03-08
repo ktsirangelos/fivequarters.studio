@@ -1,7 +1,7 @@
 // Imports
 import { STATIC_PRICE as staticPrice } from "./config";
 import { PRICE_PER_QUARTER as pricePerQuarter } from "./config";
-import { INCREMENT_PER_SET as incrementPerSet } from "./config";
+import { INCREMENT_OF_SET as incrementOfSet } from "./config";
 
 // Bindings
 let btw = 1; //btw 0% = price * 1
@@ -43,7 +43,7 @@ const getPricePerQuarter = function (set) {
   } else if (set === 16) {
     increment = 0;
   }
-  const price = pricePerQuarter + increment * incrementPerSet;
+  const price = pricePerQuarter + increment * incrementOfSet;
   return price;
 };
 
