@@ -25,11 +25,11 @@ if (document.documentElement.lang == "nl") {
 }
 
 // Functions
-const currentYear = function () {
+const getCurrentYear = function () {
   document.getElementById("currentYear").textContent = new Date().getFullYear();
 };
 
-const roundNumber = function (num, length) {
+const getRoundNumber = function (num, length) {
   const number = Math.round(num * Math.pow(10, length)) / Math.pow(10, length);
   return number.toFixed(length);
 };
@@ -48,7 +48,7 @@ const getPricePerQuarter = function (set) {
 };
 
 const getPrice = function (set, quarters) {
-  const finalPrice = roundNumber(
+  const finalPrice = getRoundNumber(
     (staticPrice + getPricePerQuarter(set) * quarters) * btw,
     2
   )
@@ -100,4 +100,4 @@ from21.addEventListener("click", function () {
 
 // Init
 loadPrices();
-currentYear();
+getCurrentYear();
