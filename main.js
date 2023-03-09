@@ -1,7 +1,7 @@
 // Imports
-import { STATIC_PRICE as staticPrice } from "./config";
-import { PRICE_PER_QUARTER as pricePerQuarter } from "./config";
-import { INCREMENT_OF_SET as incrementOfSet } from "./config";
+import { STATIC_PRICE as staticPrice } from "./config.js";
+import { PRICE_PER_QUARTER as pricePerQuarter } from "./config.js";
+import { INCREMENT_OF_SET as incrementOfSet } from "./config.js";
 
 // Bindings
 let btw = 1; //btw 0% = price * 1
