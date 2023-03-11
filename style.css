@@ -67,7 +67,7 @@ a:active {
   color: white;
 }
 
-/* Navigation Bar */
+/* Header */
 
 .navbar {
   position: fixed;
@@ -106,9 +106,9 @@ a:active {
   color: green;
 }
 
-/* Wrapper */
+/* Main */
 
-.wrapper {
+main {
   margin: 0 3vw 9vw 3vw;
   display: flex;
   flex-direction: column;
@@ -311,7 +311,7 @@ footer li {
     margin: 2vw 0 2vw 0;
   }
 
-  /* Navigation Bar */
+  /* Header */
 
   .navbar {
     padding: 3vw 3vw 3vw 3vw;
@@ -331,9 +331,9 @@ footer li {
     width: 94vw;
   }
 
-  /* Wrapper */
+  /* Main */
 
-  .wrapper {
+  main {
     margin: 0 3vw 3vw 3vw;
     gap: 3vw;
   }
