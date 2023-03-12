@@ -69,7 +69,7 @@ a:active {
 
 /* Header */
 
-.navbar {
+nav {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -90,7 +90,7 @@ a:active {
   gap: 2vw;
 }
 
-.navbar a {
+.navbar-container-1 a {
   color: black;
 }
 
