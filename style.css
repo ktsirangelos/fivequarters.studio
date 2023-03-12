@@ -340,6 +340,11 @@ footer li {
 
   /* Main */
 
+  .grid-3 {
+    grid-gap: 3vw;
+    grid-template-columns: 1fr;
+  }
+
   main {
     margin: 0 3vw 3vw 3vw;
     gap: 3vw;
@@ -391,11 +396,6 @@ footer li {
   /* Home */
 
   /* Studio */
-
-  .grid-3 {
-    grid-gap: 3vw;
-    grid-template-columns: 1fr;
-  }
 
   /* Teachers */
 
