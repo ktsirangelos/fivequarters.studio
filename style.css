@@ -313,12 +313,12 @@ footer li {
 
   /* Header */
 
-  .navbar {
+  nav {
     padding: 3vw 3vw 3vw 3vw;
     font-size: 9vw;
   }
 
-  .navbar-container-1 {
+  .nav-container-1 {
     display: none;
   }
 
@@ -326,7 +326,7 @@ footer li {
     display: none;
   }
 
-  .navbar-container-2 {
+  .nav-container-2 {
     justify-content: space-between;
     width: 94vw;
   }
