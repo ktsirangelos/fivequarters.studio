@@ -181,9 +181,9 @@ main {
   margin: 0.5vw 0 0.5vw 0;
 }
 
-/* Landing Page */
+/* Home */
 
-.landing-page {
+.home {
   bottom: 3vw;
   width: 94vw;
   position: absolute;
@@ -381,7 +381,7 @@ footer li {
     margin: 2vw 0 2vw 0;
   }
 
-  /* Landing Page */
+  /* Home */
 
   /* Pictures */
 
