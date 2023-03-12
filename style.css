@@ -202,14 +202,13 @@ main {
 
 .home {
   height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  position: relative;
   margin-bottom: 3vw;
 }
 
 .name {
-  margin-bottom: 3vw;
+  position: absolute;
+  bottom: 3vw;
 }
 
 /* Pictures */
