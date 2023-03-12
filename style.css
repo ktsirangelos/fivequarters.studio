@@ -67,7 +67,7 @@ a:active {
   color: white;
 }
 
-/* Header */
+/* Navigation */
 
 nav {
   position: fixed;
@@ -76,15 +76,11 @@ nav {
   width: 100%;
   padding: 3vw 3vw 1vw 3vw;
   background-color: white;
-  z-index: 1;
   font-size: 1.9vw;
+  z-index: 1;
 }
 
-.nav-container-1 {
-  display: flex;
-  gap: 2vw;
-}
-
+.nav-container-1,
 .nav-container-2 {
   display: flex;
   gap: 2vw;
@@ -94,10 +90,7 @@ nav {
   color: black;
 }
 
-#schedule {
-  color: blue;
-}
-
+#schedule,
 #login {
   color: blue;
 }
@@ -108,11 +101,33 @@ nav {
 
 /* Main */
 
+.grid-3 {
+  width: 100%;
+  display: grid;
+  grid-gap: 1vmin;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-3 img {
+  width: 100%;
+}
+
+.grid-4 {
+  width: 100%;
+  display: grid;
+  grid-gap: 1vmin;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5 {
+  width: 100%;
+  display: grid;
+  grid-gap: 1vmin;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 main {
   margin: 0 3vw 9vw 3vw;
-  display: flex;
-  flex-direction: column;
-  gap: 1vmin;
 }
 
 .section {
@@ -184,28 +199,18 @@ main {
 /* Home */
 
 .home {
-  position: relative;
   height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 3vw;
 }
 
-.subtitle {
-  position: absolute;
-  bottom: 3vw;
-  width: 100%;
+.name {
+  margin-bottom: 3vw;
 }
 
 /* Pictures */
-
-.img-container {
-  display: flex;
-  flex-direction: row;
-  gap: 1vmin;
-}
-
-.img {
-  width: 30vw;
-  flex-grow: 1;
-}
 
 /* Teachers */
 
@@ -313,7 +318,7 @@ footer li {
     margin: 2vw 0 2vw 0;
   }
 
-  /* Header */
+  /* Navigation */
 
   nav {
     padding: 3vw 3vw 3vw 3vw;
@@ -385,16 +390,11 @@ footer li {
 
   /* Home */
 
-  /* Pictures */
+  /* Studio */
 
-  .img-container {
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 3vw;
-  }
-
-  .img {
-    width: 100%;
+  .grid-3 {
+    grid-gap: 3vw;
+    grid-template-columns: 1fr;
   }
 
   /* Teachers */
