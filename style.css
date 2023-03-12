@@ -80,17 +80,17 @@ nav {
   font-size: 1.9vw;
 }
 
-.navbar-container-1 {
+.nav-container-1 {
   display: flex;
   gap: 2vw;
 }
 
-.navbar-container-2 {
+.nav-container-2 {
   display: flex;
   gap: 2vw;
 }
 
-.navbar-container-1 a {
+.nav-container-1 a {
   color: black;
 }
 

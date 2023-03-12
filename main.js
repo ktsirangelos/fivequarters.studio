@@ -1,7 +1,8 @@
 // Imports
-import { STATIC_PRICE as staticPrice } from "./config.js";
-import { PRICE_PER_QUARTER as pricePerQuarter } from "./config.js";
-import { INCREMENT_OF_SET as incrementOfSet } from "./config.js";
+import { STATIC_PRICE as staticPrice } from "./pricing.js";
+import { PRICE_PER_QUARTER as pricePerQuarter } from "./pricing.js";
+import { INCREMENT_OF_SET as incrementOfSet } from "./pricing.js";
+import { ENG } from "./lang.js";
 
 // Bindings
 let btw = 1; //btw 0% = price * 1
@@ -86,6 +87,8 @@ const loadPrices = function () {
     </ul>
     `;
 };
+
+const changeLanguage = function (languageObject) {};
 
 // Event Listeners
 upTo21.addEventListener("click", function () {
