@@ -184,11 +184,14 @@ main {
 /* Home */
 
 .home {
-  bottom: 3vw;
-  width: 94vw;
+  position: relative;
+  height: 100vh;
+}
+
+.subtitle {
   position: absolute;
-  display: flex;
-  justify-content: flex-start;
+  bottom: 3vw;
+  width: 100%;
 }
 
 /* Pictures */
@@ -197,7 +200,6 @@ main {
   display: flex;
   flex-direction: row;
   gap: 1vmin;
-  margin-top: 120vh;
 }
 
 .img {
@@ -393,11 +395,6 @@ footer li {
 
   .img {
     width: 100%;
-  }
-
-  #view-two,
-  #view-three {
-    display: none;
   }
 
   /* Teachers */
