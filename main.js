@@ -1,7 +1,7 @@
 // Imports
-import { STATIC_PRICE as staticPrice } from "./pricing.js";
-import { PRICE_PER_QUARTER as pricePerQuarter } from "./pricing.js";
-import { INCREMENT_OF_SET as incrementOfSet } from "./pricing.js";
+import { STATIC_PRICE as staticPrice } from "./rates.js";
+import { PRICE_PER_QUARTER as pricePerQuarter } from "./rates.js";
+import { INCREMENT_OF_SET as incrementOfSet } from "./rates.js";
 import { ENG } from "./lang.js";
 
 // Bindings

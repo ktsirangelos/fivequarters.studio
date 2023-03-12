@@ -1,5 +1,4 @@
 // English translation
-
 export const ENG = {
   htmlLang: "en",
   menu: {
