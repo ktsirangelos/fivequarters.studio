@@ -188,6 +188,7 @@ main {
 
 .studio img {
   width: 30vw;
+  height: auto;
   flex-grow: 1;
 }
 
