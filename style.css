@@ -101,58 +101,35 @@ nav {
 
 /* Main */
 
-.grid-3 {
-  width: 100%;
-  display: grid;
-  grid-gap: 1vmin;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-3 img {
-  width: 100%;
-}
-
-.grid-4 {
-  width: 100%;
-  display: grid;
-  grid-gap: 1vmin;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.grid-5 {
-  width: 100%;
-  display: grid;
-  grid-gap: 1vmin;
-  grid-template-columns: repeat(5, 1fr);
-}
-
 main {
   margin: 0 3vw 9vw 3vw;
   display: flex;
   flex-direction: column;
 }
 
-.section {
+.block {
   display: flex;
   flex-direction: column;
   gap: 1vmin;
+  margin-top: 1vmin;
 }
 
-.header {
+.title {
   display: flex;
   justify-content: center;
   text-align: center;
   padding: 6vw;
 }
 
-.section-row {
+.block-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 1vmin;
 }
 
-.section-column-3-100 {
+.block-column-3,
+.block-column-3-full-width {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -161,29 +138,17 @@ main {
   width: 100%;
 }
 
-.section-column-3 {
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 3vw;
-  width: 100%;
-}
-
-.section-column-3 li {
+.block-column-3 li {
   font-size: 1.4vw;
   margin: 0.5vw 0 0.5vw 0;
 }
 
-.section-column-3-100 a {
+.block-column-3 a,
+.block-column-3-full-width a {
   color: blue;
 }
 
-.section-column-3 a {
-  color: blue;
-}
-
-.section-column-4 {
+.block-column-4 {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -192,10 +157,14 @@ main {
   width: 100%;
 }
 
-.section-column-4 li {
+.block-column-4 li {
   font-size: 1.4vw;
   font-weight: 200;
   margin: 0.5vw 0 0.5vw 0;
+}
+
+.block-column-4 h3 {
+  font-size: 1.8vw;
 }
 
 /* Home */
@@ -204,20 +173,29 @@ main {
   position: absolute;
   display: flex;
   justify-content: flex-start;
+  width: 94vw;
   bottom: 3vw;
 }
 
-/* Pictures */
+/* Studio */
+
+.studio {
+  margin-top: 100vh;
+  width: 100%;
+  display: flex;
+  gap: 1vmin;
+}
+
+.studio img {
+  width: 30vw;
+  flex-grow: 1;
+}
 
 /* Teachers */
 
 /* Lessons */
 
 /* Pricing */
-
-.section-column-4 h3 {
-  font-size: 1.8vw;
-}
 
 .button-container {
   display: flex;
@@ -285,7 +263,7 @@ footer li {
   font-size: 2.5vw;
 }
 
-/* Mobile */
+/* Mobile Devices */
 
 @media only screen and (max-width: 850px) {
   /* General */
@@ -326,52 +304,47 @@ footer li {
     display: none;
   }
 
-  #login {
-    display: none;
-  }
-
   .nav-container-2 {
     justify-content: space-between;
     width: 94vw;
   }
 
-  /* Main */
-
-  .grid-3 {
-    grid-gap: 3vw;
-    grid-template-columns: 1fr;
+  #login {
+    display: none;
   }
+
+  /* Main */
 
   main {
     margin: 0 3vw 3vw 3vw;
     gap: 3vw;
   }
 
-  .section {
+  .block {
     gap: 3vw;
   }
 
-  .header {
+  .title {
     padding: 14vw;
   }
 
-  .section-row {
+  .block-row {
     flex-wrap: wrap;
     gap: 3vw 3vw;
   }
 
-  .section-column-3-100 {
+  .block-column-3-full-width {
     text-align: left;
   }
 
-  .section-column-3 {
+  .block-column-3 {
     text-align: left;
     width: 45.5vw;
     overflow-wrap: break-word;
     hyphens: manual;
   }
 
-  .section-column-3 li {
+  .block-column-3 li {
     font-size: 4.5vw;
     margin: 2vw 0 2vw 0;
   }
@@ -380,12 +353,12 @@ footer li {
     display: table;
   }
 
-  .section-column-4 {
+  .block-column-4 {
     padding: 7vw;
     width: 45.5vw;
   }
 
-  .section-column-4 li {
+  .block-column-4 li {
     font-size: 4.5vw;
     margin: 2vw 0 2vw 0;
   }
@@ -394,13 +367,22 @@ footer li {
 
   /* Studio */
 
+  .studio {
+    flex-wrap: wrap;
+    gap: 3vw;
+  }
+
+  .studio img {
+    width: 94vw;
+  }
+
   /* Teachers */
 
   /* Lessons */
 
   /* Pricing */
 
-  .section-column-4 h3 {
+  .block-column-4 h3 {
     font-size: 6vw;
   }
 
