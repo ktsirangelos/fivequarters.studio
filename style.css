@@ -201,21 +201,11 @@ main {
 /* Home */
 
 .home {
-  /* height: 100vh;
-  position: relative;
-  margin-bottom: 3vw; */
-
-  bottom: 3vw;
-  /* width: 94vw; */
   position: absolute;
   display: flex;
   justify-content: flex-start;
+  bottom: 3vw;
 }
-
-/* .name { */
-/* position: absolute;
-  bottom: 3vw; */
-/* } */
 
 /* Pictures */
 
