@@ -1,4 +1,9 @@
 /* General */
+@font-face {
+  src: url("inter.ttf") format("truetype");
+  font-family: "Inter";
+  font-weight: 200;
+}
 
 * {
   font-family: "Inter", sans-serif;
