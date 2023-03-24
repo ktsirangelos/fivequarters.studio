@@ -1,6 +1,6 @@
 /* General */
 @font-face {
-  src: url("Inter-ExtraLight.ttf") format("truetype");
+  src: url("Inter-ExtraLight.woff2") format("woff2");
   font-family: "Inter";
   font-display: swap;
 }
