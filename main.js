@@ -26,10 +26,6 @@ if (document.documentElement.lang == "nl") {
 }
 
 // Functions
-const getCurrentYear = function () {
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
-};
-
 const getRoundNumber = function (num, length) {
   const number = Math.round(num * Math.pow(10, length)) / Math.pow(10, length);
   return number.toFixed(length);
@@ -103,4 +99,3 @@ from21.addEventListener("click", function () {
 
 // Init
 loadPrices();
-getCurrentYear();
